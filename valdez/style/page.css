@@ -1,0 +1,74 @@
+/* Contenedor del navbar */
+/* Sticky Navbar */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+/* Brand Name */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Dropdowns */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Input and Button styling */
+input[type="text"] {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+button {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+
+.featured-images {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image-card {
+  margin-bottom: 30px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.image-card p {
+  margin-top: 10px;
+}
+
+/* Footer Section - Redes Sociales */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+footer h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+  
