@@ -1,4 +1,4 @@
-import { TopMenu } from "@/components/ui";
+import { TopMenu, Menu, Main, Footer } from "@/components/ui";
 import type { Metadata } from "next";
 
 export default function ShopLayout({
@@ -10,7 +10,10 @@ export default function ShopLayout({
         
         <main>
             <TopMenu />
+            <Menu/>
             {children}
+            <Footer/>
+            
         </main>
     );
 }

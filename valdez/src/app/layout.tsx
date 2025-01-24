@@ -1,8 +1,9 @@
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { geistMono, geistSans } from "./config/fonts";
-
-
+import BootstrapClient from "./componenteBootstrap/ClientBoostrap";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +20,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       {children}
+      <BootstrapClient/>
       </body>
     </html>
   );

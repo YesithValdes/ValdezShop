@@ -1,3 +1,78 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 
+/* Estilo global para el contenedor principal */
+.featured-images {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Fondo suave */
+  }
+  
+  /* Estilo para el título */
+  .featured-images h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Estilo para el contenedor de las imágenes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Menor espacio entre imágenes */
+  }
+  
+  /* Cada columna ahora ocupará un 100% en pantallas muy pequeñas, 50% en pantallas medianas y 33% en grandes */
+  .col-lg-4, .col-md-6 {
+    flex: 1 1 30%; /* Deja que las columnas se ajusten */
+    max-width: 33%; /* En pantallas grandes, 3 columnas */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .col-lg-4 {
+      max-width: 50%; /* En pantallas medianas, 2 columnas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-4, .col-md-6 {
+      max-width: 100%; /* En pantallas pequeñas, 1 columna */
+    }
+  }
+  
+  /* Estilo para la imagen */
+  .image-card {
+    background-color: #fff;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Para que la imagen no sobresalga de los bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto de hover sobre las imágenes */
+  .image-card:hover {
+    transform: translateY(-10px); /* Desplazamiento hacia arriba */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
+  }
+  
+  /* Estilo para la imagen */
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f8f9fa; /* Borde sutil entre la imagen y la descripción */
+  }
+  
+  /* Estilo para la descripción */
+  .image-card p {
+    padding: 15px;
+    font-size: 1rem;
+    color: #6c757d; /* Color gris suave */
+    text-align: center;
+    font-weight: 400;
+  }
+  

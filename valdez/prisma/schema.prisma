@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id                  String       @id @default(uuid()) // Identificador único
+  nombre              String       // Nombre del producto
+  descripcion         String       // Breve descripción
+  precio              Float        // Precio
+  categoriaId         Int          // ID de la categoría
+  categoria           Category     @relation(fields: [categoriaId], references: [id]) // Relación con la categoría
+  stockId             Int          // ID del inventario
+  stock               Inventory    @relation(fields: [stockId], references: [id]) // Relación con inventario
+  imagenPrincipal     String       // URL de la imagen principal
+  createdAt           DateTime     @default(now()) // Fecha de creación
+  updatedAt           DateTime     @updatedAt      // Fecha de última actualización
+}
+
+model Category {
+  id          Int       @id @default(autoincrement()) // ID de la categoría
+  nombre      String    @unique                       // Nombre único de la categoría
+  descripcion String?                                // Descripción opcional
+  productos   Product[] // Relación con los productos
+}
+
+model Inventory {
+  id        Int     @id @default(autoincrement()) // ID único
+  cantidad  Int                                 // Cantidad disponible
+  estado    String                              // Estado del inventario (e.g., "Disponible", "Agotado")
+  productos Product[]                           // Relación con productos
+}
+

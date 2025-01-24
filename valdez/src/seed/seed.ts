@@ -1,0 +1,118 @@
+
+export const initialData  = {
+    products: [
+        {
+            id: "1",
+            nombre: "Bolso de Cuero Clásico",
+            descripcion: "Bolso hecho a mano con cuero genuino, ideal para uso diario.",
+            precio: 120.0,
+            precioDescuento: 100.0,
+            categoria: "Bolsos",
+            disponibilidad: "En stock",
+            tags: ["elegante", "resistente", "clásico"],
+            materiales: "Cuero genuino y forro de algodón",
+            dimensiones: "30x20x10 cm",
+            peso: "1.2 kg",
+            colores: ["Negro", "Marrón", "Caramelo"],
+            imagenPrincipal: "https://cuerosvelezco.vtexassets.com/arquivos/ids/278855-500-auto?v=638581394109270000&width=500&height=auto&aspect=true",
+            galeriaImagenes: [
+              "https://cuerosvelezco.vtexassets.com/arquivos/ids/280482-500-auto?v=638592622145630000&width=500&height=auto&aspect=true",
+              "https://tienda.com/imagenes/bolso-clasico2.png"
+            ],
+            stock: 15,
+            valoracion: 4.8,
+            numOpiniones: 25,
+            paisOrigen: "Colombia",
+            costoEnvio: 5.99,
+            garantia: "1 año contra defectos de fábrica",
+            genero: "men"
+          },
+          {
+            id: "2",
+            nombre: "Cinturón de Cuero Vintage",
+            descripcion: "Cinturón elegante con diseño vintage, ideal para cualquier ocasión.",
+            precio: 45.0,
+            categoria: "Cinturones",
+            disponibilidad: "En stock",
+            tags: ["vintage", "elegante", "casual"],
+            materiales: "Cuero genuino",
+            colores: ["Marrón", "Negro"],
+            imagenPrincipal: "https://cuerosvelezco.vtexassets.com/arquivos/ids/280487/1037816-04-01-Bolso-manos-libres-de-cuero.jpg?v=638592622939270000",
+            stock: 30,
+            valoracion: 4.5,
+            numOpiniones: 18,
+            paisOrigen: "México",
+            costoEnvio: 3.99,
+            genero: "women"
+          },
+          {
+            id: "3",
+            nombre: "Portafolio Ejecutivo de Cuero",
+            descripcion: "Portafolio premium diseñado para profesionales, con varios compartimentos.",
+            precio: 250.0,
+            categoria: "Portafolios",
+            disponibilidad: "En stock",
+            tags: ["profesional", "premium", "duradero"],
+            materiales: "Cuero de grano completo",
+            dimensiones: "40x30x10 cm",
+            peso: "2.5 kg",
+            colores: ["Negro", "Marrón"],
+            imagenPrincipal: "https://cuerosvelezco.vtexassets.com/arquivos/ids/278855-500-auto?v=638581394109270000&width=500&height=auto&aspect=true",
+            galeriaImagenes: [
+              "https://cuerosvelezco.vtexassets.com/arquivos/ids/280482-500-auto?v=638592622145630000&width=500&height=auto&aspect=true",
+              "https://tienda.com/imagenes/portafolio-ejecutivo2.png"
+            ],
+            stock: 8,
+            valoracion: 5.0,
+            numOpiniones: 10,
+            paisOrigen: "Italia",
+            costoEnvio: 10.0,
+            garantia: "2 años contra defectos de fábrica",
+            genero: "men"
+          },
+          {
+            id: "4",
+            nombre: "Mochila de Cuero Minimalista",
+            descripcion: "Mochila espaciosa con diseño minimalista, ideal para trabajo o estudio.",
+            precio: 180.0,
+            precioDescuento: 150.0,
+            categoria: "Mochilas",
+            disponibilidad: "En stock",
+            tags: ["minimalista", "moderna", "espaciosa"],
+            materiales: "Cuero de grano completo y forro de tela",
+            dimensiones: "35x25x15 cm",
+            peso: "1.8 kg",
+            colores: ["Caramelo", "Marrón Claro"],
+            imagenPrincipal: "https://cuerosvelezco.vtexassets.com/arquivos/ids/280487/1037816-04-01-Bolso-manos-libres-de-cuero.jpg?v=638592622939270000",
+            galeriaImagenes: [
+              "https://cuerosvelezco.vtexassets.com/arquivos/ids/280482-500-auto?v=638592622145630000&width=500&height=auto&aspect=true",
+              "https://tienda.com/imagenes/mochila-minimalista2.png"
+            ],
+            stock: 12,
+            valoracion: 4.7,
+            numOpiniones: 20,
+            paisOrigen: "España",
+            costoEnvio: 7.5,
+            genero: "women"
+          },
+          {
+            id: "5",
+            nombre: "Llaveros de Cuero Personalizados",
+            descripcion: "Llaveros hechos a mano con opciones de grabado personal.",
+            precio: 10.0,
+            categoria: "Accesorios",
+            disponibilidad: "En stock",
+            tags: ["personalizado", "hecho a mano", "pequeño"],
+            materiales: "Cuero genuino",
+            colores: ["Negro", "Marrón", "Rojo"],
+            imagenPrincipal: "https://cuerosvelezco.vtexassets.com/arquivos/ids/278855-500-auto?v=638581394109270000&width=500&height=auto&aspect=true",
+            opcionesPersonalizacion: ["Grabado con nombre", "Diseño especial"],
+            stock: 50,
+            valoracion: 4.6,
+            numOpiniones: 15,
+            paisOrigen: "Argentina",
+            costoEnvio: 2.0,
+            genero: "men"
+          }
+    ]
+}
