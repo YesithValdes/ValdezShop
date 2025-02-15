@@ -1,22 +1,23 @@
-
-import { titleFont } from "@/app/config/fonts";
-import { Product } from "@/interfaces";
-import { ProductGridItem } from "./ProductGridItem";
+import { Product } from '@/interfaces';
+import { ProductGridItem } from './ProductGridItem';
 
 interface Props {
-    products: Product[];
-  }
-
-
-
-export const ProductGrid = ({products}: Props) => {
-    return (
-        <div className="container">
-          <div className="row">
-            {products.map((product) => (
-              <ProductGridItem key={product.id} product={product} />
-            ))}
-          </div>
-        </div>
-      );
+  products: Product[];
 }
+
+
+export const ProductGrid = ( { products }: Props ) => {
+  return (
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 mb-10">
+      {
+        products.map( product => (
+          <ProductGridItem
+            key={ product.slug }
+            product={ product }
+          />
+        ) )
+      }
+
+    </div>
+  );
+};

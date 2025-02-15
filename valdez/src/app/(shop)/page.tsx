@@ -1,13 +1,24 @@
+import { ProductGrid, Title } from '@/components';
+import { initialData } from '@/seed/seed';
 
-import '../../../style/page.css'
-import { Footer, Main, ProductGrid, Title } from "@/components/ui";
-import { initialData } from "@/seed/seed";
+
+const products = initialData.products;
+
 
 
 export default function Home() {
   return (
     <>
-    <Main/>
+      <Title
+        title="Tienda"
+        subtitle="Todos los productos"
+        className="mb-2"
+      />
+
+      <ProductGrid 
+        products={ products }
+      />
+      
     </>
   );
 }
